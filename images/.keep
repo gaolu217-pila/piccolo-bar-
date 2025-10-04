@@ -1,0 +1,35 @@
+<!-- 菜单卡片 -->
+<section class="menu">
+  <h2>🍴 Il Nostro Menu</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/hotdog1.jpg" alt="Hot Dog">
+      <h3>Hot Dog Americani</h3>
+    </div>
+    <div class="card">
+      <img src="images/burger.jpg" alt="Burger">
+      <h3>Hamburger</h3>
+    </div>
+    <div class="card">
+      <img src="images/sandwich1.jpg" alt="Sandwich">
+      <h3>Sandwich</h3>
+    </div>
+    <div class="card">
+      <img src="images/drink1.jpg" alt="Cocktail">
+      <h3>Cocktail</h3>
+    </div>
+  </div>
+</section>
+
+<!-- 图片展示墙 -->
+<section class="gallery">
+  <h2>📸 La Galleria</h2>
+  <div class="grid">
+    <img src="images/sushi.jpg" alt="Sushi">
+    <img src="images/snacks.jpg" alt="Snack">
+    <img src="images/drink2.jpg" alt="Drink">
+    <img src="images/whisky.jpg" alt="Whisky">
+    <img src="images/sandwich2.jpg" alt="Sandwich">
+    <img src="images/hotdog2.jpg" alt="Hotdog">
+  </div>
+</section>
