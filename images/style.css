@@ -1,0 +1,79 @@
+/* ===== Piccolo Bar • Black & Gold ===== */
+:root{
+  --gold:#d4af37;
+  --bg:#000;
+  --ink:#f5f5f5;
+  --muted:#bdbdbd;
+  --panel:#0e0e0e;
+  --line:#2a2a2a;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+  font-family:system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* 顶部栏 */
+.topbar{position:sticky;top:0;z-index:50;display:flex;gap:16px;align-items:center;justify-content:space-between;
+  padding:10px 16px;background:rgba(0,0,0,.8);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.brand{letter-spacing:2px;font-weight:900;color:var(--gold);font-size:18px}
+.brand span{color:#fff}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{color:var(--gold);text-decoration:none;padding:8px 12px;border-radius:8px}
+.nav a:hover{background:var(--gold);color:#000}
+.cta{color:#000;background:var(--gold);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+.cta:hover{filter:brightness(1.05)}
+
+/* Hero */
+.hero{position:relative;height:70vh;min-height:520px;display:grid;place-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.05)}
+.hero-mask{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.45),rgba(0,0,0,.75))}
+.hero-content{position:relative;text-align:center;padding:0 18px}
+.hero-title{font-size:clamp(44px, 9vw, 92px);letter-spacing:2px;margin:0 0 8px;color:var(--gold)}
+.hero-sub{margin:6px 0 8px;color:#eaeaea;font-size:clamp(16px,2.3vw,22px)}
+.hero-info{margin:0 0 14px;color:#eaeaea}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{border:1px solid var(--gold);color:var(--gold);padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn:hover{background:var(--gold);color:#000}
+.btn.ghost{background:transparent}
+
+/* 区块 */
+.section{padding:46px 0}
+.section.alt{background:var(--panel)}
+.section-title{text-align:center;margin:0 0 14px;color:var(--gold);font-size:clamp(28px,4.5vw,42px)}
+.lead{color:var(--muted);text-align:center;margin:0 auto 22px;max-width:760px}
+
+/* 卖点 */
+.features{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.feature{background:#0b0b0b;border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.feature .icon{font-size:26px;margin-bottom:6px}
+.feature h3{margin:6px 0;color:var(--gold)}
+.feature p{margin:0;color:var(--muted)}
+
+/* 菜单卡片 */
+.cards{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.card{width:260px;background:#0b0b0b;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  transition:transform .25s ease, box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.35)}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.card-body{padding:14px}
+.card-body h3{margin:6px 0;color:var(--gold)}
+.card-body p{margin:0;color:var(--muted)}
+
+/* 相册 */
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;border:2px solid var(--gold);
+  transition:transform .25s ease}
+.gallery img:hover{transform:scale(1.03)}
+
+/* 联系方式 */
+.contact .contact-grid{display:grid;gap:16px;grid-template-columns:1.1fr 1.4fr;align-items:start}
+@media (max-width: 860px){ .contact .contact-grid{grid-template-columns:1fr} }
+.contact-card{background:#0b0b0b;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:left}
+.contact-card h3{color:var(--gold);margin:4px 0 8px}
+.contact-card p{margin:6px 0}
+.hours ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+.map{width:100%;height:320px;border:0;border-radius:12px}
+
+/* 页脚 */
+.footer{margin-top:34px;padding:18px;text-align:center;color:#9a9a9a;border-top:1px solid var(--line);background:#050505}
