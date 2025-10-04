@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Piccolo Bar Rovigo • Eleganza & Gusto</title>
-  <meta name="description" content="Piccolo Bar Rovigo — Cocktail d’autore, snack caldi e buona atmosfera. Via Angeli 24, Rovigo. Orario: 7:00–1:00." />
+  <meta name="description" content="Piccolo Bar Rovigo — cocktail d’autore, snack caldi e buona atmosfera. Via Angeli 24, Rovigo. Orario: 7:00–1:00." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 </head>
 <body>
 
-  <!-- 顶部导航 -->
+  <!-- 顶部 -->
   <header class="topbar">
     <div class="brand">PICCOLO BAR <span>ROVIGO</span></div>
     <nav class="nav">
@@ -23,13 +22,9 @@
     <a class="cta" href="tel:+393248138432">☎ 324 813 8432</a>
   </header>
 
-  <!-- 巨幕 Hero（标题更大 + 新图） -->
+  <!-- 巨幕 Hero：大标题 + 背景图 -->
   <section id="hero" class="hero">
-    <img
-      src="https://images.unsplash.com/photo-1514362545857-3bc16c4c76b8?q=80&w=1800&auto=format&fit=crop"
-      alt="Whisky & Atmosphere"
-      class="hero-bg"
-      loading="eager" decoding="async" fetchpriority="high">
+    <img class="hero-bg" src="images/hero.jpg" alt="Piccolo Bar Rovigo" loading="eager" decoding="async" fetchpriority="high">
     <div class="hero-mask"></div>
     <div class="hero-content">
       <h1 class="hero-title">🍸 PICCOLO BAR ROVIGO</h1>
@@ -42,12 +37,12 @@
     </div>
   </section>
 
-  <!-- 关于我们（更完整文字表达） -->
+  <!-- 关于 -->
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title">Chi Siamo</h2>
       <p class="lead">
-        Un bar di quartiere nel cuore di Rovigo: caffè all’alba, aperitivo al tramonto, cocktail d’autore la sera.
+        Un piccolo bar nel cuore di Rovigo: caffè all’alba, aperitivo al tramonto, cocktail d’autore la sera.
         Ingredienti semplici, preparati al momento. Servizio cordiale, atmosfera black & gold.
       </p>
       <div class="features">
@@ -70,15 +65,15 @@
     </div>
   </section>
 
-  <!-- 菜单卡片（新图） -->
+  <!-- 菜单卡片 -->
   <section id="menu" class="section alt">
     <div class="container">
       <h2 class="section-title">Il Nostro Menu</h2>
-      <p class="lead">Hot Dog · Hamburger · Piadina · Patatine · Sandwich · Cocktail</p>
+      <p class="lead">Hot Dog · Hamburger · Piadina · Patatine · Cocktail</p>
 
       <div class="cards">
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1200&auto=format&fit=crop" alt="Hot Dog" loading="lazy" decoding="async">
+          <img src="images/hotdog.jpg" alt="Hot Dog" loading="lazy" decoding="async">
           <div class="card-body">
             <h3>American Hot Dog</h3>
             <p>Pane morbido · Salsiccia · Salse</p>
@@ -86,7 +81,7 @@
         </article>
 
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Hamburger" loading="lazy" decoding="async">
+          <img src="images/burger.jpg" alt="Hamburger" loading="lazy" decoding="async">
           <div class="card-body">
             <h3>Hamburger</h3>
             <p>Manzo succoso · Formaggio · Insalata</p>
@@ -94,7 +89,7 @@
         </article>
 
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1625940925420-8cee0f548186?q=80&w=1200&auto=format&fit=crop" alt="Piadina" loading="lazy" decoding="async">
+          <img src="images/piadina.jpg" alt="Piadina" loading="lazy" decoding="async">
           <div class="card-body">
             <h3>Piadina</h3>
             <p>Prosciutto · Rucola · Squacquerone</p>
@@ -102,28 +97,36 @@
         </article>
 
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?q=80&w=1200&auto=format&fit=crop" alt="Fries" loading="lazy" decoding="async">
+          <img src="images/fries.jpg" alt="Patatine" loading="lazy" decoding="async">
           <div class="card-body">
             <h3>Patatine Fritte</h3>
             <p>Croccanti fuori, morbide dentro</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/cocktail.jpg" alt="Cocktail" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3>Cocktail d’Autore</h3>
+            <p>Classici & specialità della casa</p>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- 相册（新图 + 懒加载） -->
+  <!-- 相册 -->
   <section id="gallery" class="section">
     <div class="container">
       <h2 class="section-title">Galleria</h2>
       <p class="lead">Uno sguardo ai nostri drink e snack.</p>
       <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1619605572331-809c6b3bc077?q=80&w=1200&auto=format&fit=crop" alt="Cocktail" loading="lazy" decoding="async">
-        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop" alt="Sandwich" loading="lazy" decoding="async">
-        <img src="https://images.unsplash.com/photo-1562158070-4d7d95f61f3e?q=80&w=1200&auto=format&fit=crop" alt="Sushi" loading="lazy" decoding="async">
-        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=1200&auto=format&fit=crop" alt="Burger" loading="lazy" decoding="async">
-        <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1200&auto=format&fit=crop" alt="Hot Dog" loading="lazy" decoding="async">
-        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c76b8?q=80&w=1200&auto=format&fit=crop" alt="Whisky" loading="lazy" decoding="async">
+        <img src="images/burger.jpg" alt="Burger" loading="lazy" decoding="async">
+        <img src="images/hotdog.jpg" alt="Hot Dog" loading="lazy" decoding="async">
+        <img src="images/piadina.jpg" alt="Piadina" loading="lazy" decoding="async">
+        <img src="images/cocktail.jpg" alt="Cocktail" loading="lazy" decoding="async">
+        <img src="images/fries.jpg" alt="Fries" loading="lazy" decoding="async">
+        <img src="images/hero.jpg" alt="Bar" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -156,5 +159,16 @@
     © 2025 Piccolo Bar Rovigo · Eleganza & Gusto
   </footer>
 
+  <!-- 结构化数据（本地搜索更友好） -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BarOrPub",
+    "name":"Piccolo Bar Rovigo",
+    "address":{"@type":"PostalAddress","streetAddress":"Via Angeli 24","addressLocality":"Rovigo","addressCountry":"IT"},
+    "telephone":"+39 3248138432",
+    "openingHours":"Mo-Su 07:00-01:00"
+  }
+  </script>
 </body>
 </html>
