@@ -1,248 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Piccolo Bar Rovigo • Coffee & Cocktails</title>
-  <meta name="description" content="Piccolo Bar Rovigo: coffee, signature cocktails and hot snacks. Via Angeli 24, Rovigo. 7:00–1:00.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piccolo Bar Rovigo</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #2b1d14;
+      color: #f2e5d5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #3a2316;
+      padding: 30px 10px;
+      color: #f7d9a5;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #e0c9a6;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #e6b96f;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .menu-item {
+      background-color: #3b271b;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #1d120d;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #a48b74;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- 语言切换 -->
-<div class="lang-switch">
-  <button data-lang="it">🇮🇹 IT</button>
-  <button data-lang="en">🇬🇧 EN</button>
-  <button data-lang="zh">🇨🇳 中文</button>
-</div>
-
-<!-- 顶部 -->
-<header class="topbar">
-  <div class="brand">Piccolo Bar <span>Rovigo</span></div>
-  <nav class="nav">
-    <a href="#hero" id="nav_home">Home</a>
-    <a href="#about" id="nav_about">Chi Siamo</a>
-    <a href="#menu" id="nav_menu">Menu</a>
-    <a href="#gallery" id="nav_gallery">Galleria</a>
-    <a href="#contact" id="nav_contact">Contatti</a>
-  </nav>
-  <a class="cta" href="tel:+393248138432">☎ 324 813 8432</a>
+<header>
+  <h1>☕ Piccolo Bar Rovigo</h1>
+  <p>意式风情 · 美味小食 · 手工调饮 · 温馨氛围</p>
 </header>
 
-<!-- Hero：咖啡棕主题 + 大标题 -->
-<section id="hero" class="hero">
-  <picture>
-    <source srcset="images/hero.webp" type="image/webp">
-    <img src="images/hero.jpg" alt="Coffee & Cocktails" class="hero-bg" loading="eager" decoding="async" fetchpriority="high">
-  </picture>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1 class="hero-title" id="t_title">PICCOLO BAR ROVIGO</h1>
-    <p class="hero-sub" id="t_sub">Caffè artigianale • Cocktail d’autore • Snack caldi</p>
-    <p class="hero-info" id="t_info">📍 Via Angeli 24 · 🕒 7:00 – 1:00</p>
-    <div class="hero-actions">
-      <a href="#menu" class="btn" id="t_btn_menu">Scopri il Menu</a>
-      <a href="https://www.google.com/maps/search/?api=1&query=Via+Angeli+24+Rovigo" target="_blank" class="btn ghost" id="t_btn_map">Vedi su Maps</a>
+<section>
+  <h2>🍔 Menu - 菜单 - Menu</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <img src="55A65B89-7080-4264-ADBD-6FDA73A1A63A.jpeg" alt="Cocktail">
+      <h3>Signature Cocktail</h3>
+      <p>特调鸡尾酒 / Cocktail d’autore</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="2018B0F9-2DE0-4C89-9FC7-79F521517247.jpeg" alt="Hot Dog">
+      <h3>American Hot Dog</h3>
+      <p>经典热狗 · 美式风味</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="29277BBC-62FA-4519-B310-1B82F4D785AD.jpeg" alt="Burger">
+      <h3>Cheese Burger</h3>
+      <p>多汁牛肉 · 芝士香浓</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="822C4CAF-3266-4A9D-A2D8-7E3153C4457A.jpeg" alt="Piadina">
+      <h3>Piadina</h3>
+      <p>意式薄饼 · 火腿与菠菜</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="C476E0CB-5455-4E34-BC8A-31646F366C48.jpeg" alt="Bar Drinks">
+      <h3>Drinks & Aperitivi</h3>
+      <p>咖啡 · 鸡尾酒 · 美好夜晚</p>
     </div>
   </div>
 </section>
 
-<!-- 关于 -->
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="section-title" id="a_title">Chi Siamo</h2>
-    <p class="lead" id="a_text">
-      Bar di quartiere dal carattere caldo e raffinato：la mattina profumo di caffè，la sera cocktail灯光氛围。食材简单新鲜，现点现做；服务友好，咖啡棕配色传递温度与质感。
-    </p>
-    <div class="features">
-      <div class="feature">
-        <div class="icon">☕️</div>
-        <h3 id="f1t">Caffè & Aperitivi</h3>
-        <p id="f1d">精选豆与意式手法，开胃酒时段更惬意。</p>
-      </div>
-      <div class="feature">
-        <div class="icon">🍹</div>
-        <h3 id="f2t">Cocktail d’Autore</h3>
-        <p id="f2d">经典与特调，平衡而有层次。</p>
-      </div>
-      <div class="feature">
-        <div class="icon">🍔</div>
-        <h3 id="f3t">Snack Caldi</h3>
-        <p id="f3d">热狗、汉堡、Piadina、薯条——现做更香。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 菜单（四张主打） -->
-<section id="menu" class="section alt">
-  <div class="container">
-    <h2 class="section-title" id="m_title">Il Nostro Menu</h2>
-    <p class="lead" id="m_lead">Hot Dog · Hamburger · Piadina · Patatine · Cocktail</p>
-
-    <div class="cards">
-      <article class="card">
-        <img src="images/hotdog.jpg" alt="Hot Dog" loading="lazy" decoding="async">
-        <div class="card-body">
-          <h3 id="m1t">American Hot Dog</h3>
-          <p id="m1d">松软面包 · 肉香饱满 · 酱料诱人</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/burger.jpg" alt="Burger" loading="lazy" decoding="async">
-        <div class="card-body">
-          <h3 id="m2t">Hamburger</h3>
-          <p id="m2d">多汁牛肉 · 芝士融化 · 层次分明</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/piadina.jpg" alt="Piadina" loading="lazy" decoding="async">
-        <div class="card-body">
-          <h3 id="m3t">Piadina</h3>
-          <p id="m3d">意式夹饼 · 火腿芝麻菜 · 现做现烤</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/fries.jpg" alt="Fries" loading="lazy" decoding="async">
-        <div class="card-body">
-          <h3 id="m4t">Patatine Fritte</h3>
-          <p id="m4d">外酥里嫩 · 金黄香脆</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 相册（再加饮品等） -->
-<section id="gallery" class="section">
-  <div class="container">
-    <h2 class="section-title" id="g_title">Galleria</h2>
-    <p class="lead" id="g_lead">Uno sguardo ai nostri drink e snack.</p>
-    <div class="gallery">
-      <img src="images/drinks.jpg"  alt="Cocktails" loading="lazy" decoding="async">
-      <img src="images/burger.jpg"  alt="Burger"    loading="lazy" decoding="async">
-      <img src="images/hotdog.jpg"  alt="Hot Dog"   loading="lazy" decoding="async">
-      <img src="images/piadina.jpg" alt="Piadina"   loading="lazy" decoding="async">
-      <img src="images/fries.jpg"   alt="Fries"     loading="lazy" decoding="async">
-      <img src="images/hero.jpg"    alt="Bar"       loading="lazy" decoding="async">
-    </div>
-  </div>
-</section>
-
-<!-- 联系方式 -->
-<section id="contact" class="section alt">
-  <div class="container contact">
-    <h2 class="section-title" id="c_title">Contatti & Orari</h2>
-
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3 id="c_visit">Vieni a trovarci</h3>
-        <p id="c_addr">📍 Via Angeli 24, Rovigo</p>
-        <p id="c_tel">☎️ Tel: <a href="tel:+393248138432">+39 324 813 8432</a></p>
-        <p id="c_wh">💬 WhatsApp: <a href="https://wa.me/393248138432?text=Ciao%20Piccolo%20Bar!%20Vorrei%20prenotare." target="_blank">prenota ora</a></p>
-        <div class="hours">
-          <div id="h_title">🕒 Orario</div>
-          <ul id="h_list"><li>Lun–Dom: 7:00 – 1:00</li></ul>
-        </div>
-        <div class="actions">
-          <a class="btn" href="tel:+393248138432" id="c_call">Chiama Ora</a>
-          <a class="btn ghost" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Via+Angeli+24+Rovigo" id="c_map">Apri Google Maps</a>
-        </div>
-      </div>
-
-      <iframe class="map" src="https://www.google.com/maps?q=Via+Angeli+24+Rovigo&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">© 2025 Piccolo Bar Rovigo · Coffee & Cocktails</footer>
-
-<!-- 三语切换 -->
-<script>
-const dict = {
-  it:{nav_home:"Home",nav_about:"Chi Siamo",nav_menu:"Menu",nav_gallery:"Galleria",nav_contact:"Contatti",
-    t_title:"PICCOLO BAR ROVIGO",t_sub:"Caffè artigianale • Cocktail d’autore • Snack caldi",
-    t_info:"📍 Via Angeli 24 · 🕒 7:00 – 1:00",t_btn_menu:"Scopri il Menu",t_btn_map:"Vedi su Maps",
-    a_title:"Chi Siamo",
-    a_text:"Bar di quartiere caldo e raffinato: al mattino profumo di caffè, alla sera cocktail d’autore. Ingredienti semplici e freschi, preparati al momento; servizio cordiale, palette coffee-brown accogliente.",
-    f1t:"Caffè & Aperitivi",f1d:"Selezione di miscele e aperitivi rilassanti.",
-    f2t:"Cocktail d’Autore",f2d:"Classici e specialità bilanciate con cura.",
-    f3t:"Snack Caldi",f3d:"Hot dog, hamburger, piadina, patatine — appena fatti.",
-    m_title:"Il Nostro Menu",m_lead:"Hot Dog · Hamburger · Piadina · Patatine · Cocktail",
-    m1t:"American Hot Dog",m1d:"Pane morbido · salsiccia · salse",
-    m2t:"Hamburger",m2d:"Manzo succoso · formaggio · insalata",
-    m3t:"Piadina",m3d:"Prosciutto e rucola · cottura al momento",
-    m4t:"Patatine Fritte",m4d:"Croccanti fuori, morbide dentro",
-    g_title:"Galleria",g_lead:"Uno sguardo ai nostri drink e snack.",
-    c_title:"Contatti & Orari",c_visit:"Vieni a trovarci",
-    c_addr:"📍 Via Angeli 24, Rovigo",
-    c_tel:'☎️ Tel: <a href="tel:+393248138432">+39 324 813 8432</a>',
-    c_wh:'💬 WhatsApp: <a href="https://wa.me/393248138432?text=Ciao%20Piccolo%20Bar!%20Vorrei%20prenotare." target="_blank">prenota ora</a>',
-    h_title:"🕒 Orario",
-    c_call:"Chiama Ora",c_map:"Apri Google Maps"
-  },
-  en:{nav_home:"Home",nav_about:"About",nav_menu:"Menu",nav_gallery:"Gallery",nav_contact:"Contact",
-    t_title:"PICCOLO BAR ROVIGO",t_sub:"Craft coffee • Signature cocktails • Hot snacks",
-    t_info:"📍 Via Angeli 24 · 🕒 7:00 AM – 1:00 AM",t_btn_menu:"View Menu",t_btn_map:"Open Maps",
-    a_title:"About Us",
-    a_text:"A warm, refined neighborhood bar: coffee in the morning, signature cocktails by night. Fresh, simple ingredients made to order; friendly service and a cozy coffee-brown palette.",
-    f1t:"Coffee & Aperitivo",f1d:"Selected blends and relaxing aperitivo.",
-    f2t:"Signature Cocktails",f2d:"Classics and house specials, perfectly balanced.",
-    f3t:"Hot Snacks",f3d:"Hot dogs, burgers, piadina, fries — freshly made.",
-    m_title:"Our Menu",m_lead:"Hot Dog · Hamburger · Piadina · Fries · Cocktails",
-    m1t:"American Hot Dog",m1d:"Soft bun · juicy sausage · sauces",
-    m2t:"Hamburger",m2d:"Juicy beef · melting cheese · crisp lettuce",
-    m3t:"Piadina",m3d:"Ham & rocket · hot off the griddle",
-    m4t:"Fries",m4d:"Crispy outside, tender inside",
-    g_title:"Gallery",g_lead:"A look at our drinks and snacks.",
-    c_title:"Contact & Hours",c_visit:"Come visit us",
-    c_addr:"📍 Via Angeli 24, Rovigo",
-    c_tel:'☎️ Phone: <a href="tel:+393248138432">+39 324 813 8432</a>',
-    c_wh:'💬 WhatsApp: <a href="https://wa.me/393248138432?text=Hi%20Piccolo%20Bar!%20I%27d%20like%20to%20book." target="_blank">book now</a>',
-    h_title:"🕒 Hours",
-    c_call:"Call Now",c_map:"Open Google Maps"
-  },
-  zh:{nav_home:"首页",nav_about:"关于我们",nav_menu:"菜单",nav_gallery:"相册",nav_contact:"联系",
-    t_title:"PICCOLO BAR ROVIGO",t_sub:"精品咖啡 • 招牌鸡尾酒 • 热食小吃",
-    t_info:"📍 Via Angeli 24 · 🕒 07:00 – 01:00",t_btn_menu:"查看菜单",t_btn_map:"打开地图",
-    a_title:"关于我们",
-    a_text:"温暖而有质感的社区小酒吧：清晨咖啡香，夜晚招牌特调。新鲜食材，现点现做；友好服务，咖啡棕配色更显高级与舒适。",
-    f1t:"咖啡 & 开胃酒",f1d:"精选拼配，惬意时刻。",
-    f2t:"招牌鸡尾酒",f2d:"经典与特调，层次平衡。",
-    f3t:"热食小吃",f3d:"热狗、汉堡、Piadina、薯条——现做更香。",
-    m_title:"我们的菜单",m_lead:"热狗 · 汉堡 · 皮亚蒂娜 · 薯条 · 鸡尾酒",
-    m1t:"美式热狗",m1d:"松软面包 · 肉香饱满 · 酱料诱人",
-    m2t:"汉堡",m2d:"多汁牛肉 · 芝士融化 · 层次分明",
-    m3t:"Piadina 夹饼",m3d:"火腿芝麻菜 · 现烤出炉",
-    m4t:"薯条",m4d:"外酥里嫩 · 金黄香脆",
-    g_title:"照片墙",g_lead:"先睹为快：饮品与小吃。",
-    c_title:"联系方式 & 营业时间",c_visit:"欢迎到店",
-    c_addr:"📍 Via Angeli 24, Rovigo",
-    c_tel:'☎️ 电话：<a href="tel:+393248138432">+39 324 813 8432</a>',
-    c_wh:'💬 WhatsApp：<a href="https://wa.me/393248138432?text=Ciao%20Piccolo%20Bar!" target="_blank">点击预约</a>',
-    h_title:"🕒 营业时间",
-    c_call:"立即拨打",c_map:"打开 Google 地图"
-  }
-};
-function applyLang(lang='it'){
-  const d=dict[lang];
-  ["nav_home","nav_about","nav_menu","nav_gallery","nav_contact",
-   "t_title","t_sub","t_info","t_btn_menu","t_btn_map",
-   "a_title","a_text","f1t","f1d","f2t","f2d","f3t","f3d",
-   "m_title","m_lead","m1t","m1d","m2t","m2d","m3t","m3d","m4t","m4d",
-   "g_title","g_lead",
-   "c_title","c_visit","c_addr","c_tel","c_wh","h_title","c_call","c_map"
-  ].forEach(id=>{const el=document.getElementById(id); if(el) el.innerHTML=d[id];});
-  document.querySelector(".brand").innerHTML = (lang==='zh') ? "Piccolo Bar <span>Rovigo</span>" : "Piccolo Bar <span>Rovigo</span>";
-}
-applyLang('it');
-document.querySelectorAll('.lang-switch button').forEach(b=>b.addEventListener('click',()=>applyLang(b.dataset.lang)));
-</script>
+<footer>
+  <p>📍 Via Angeli 24, Rovigo · ☎️ 3248138432</p>
+  <p>Open 7:00 - 1:00 · Benvenuti! 欢迎光临！</p>
+</footer>
 
 </body>
 </html>
