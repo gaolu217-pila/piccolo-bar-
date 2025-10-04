@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piccolo Bar - Rovigo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; color: #333; }
+    header { background: #d32f2f; color: white; text-align: center; padding: 20px; position: relative; }
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; max-width: 900px; margin: auto; }
+    h2 { color: #d32f2f; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 5px 0; }
+    img { max-width: 100%; border-radius: 10px; margin-top: 15px; }
+    footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+    .lang-switch { position: absolute; top: 10px; right: 10px; }
+    .lang-switch button { margin: 0 2px; padding: 5px 8px; border: none; cursor: pointer; border-radius: 5px; background: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="lang-switch">
+      <button onclick="setLang('it')">🇮🇹 IT</button>
+      <button onclick="setLang('en')">🇬🇧 EN</button>
+      <button onclick="setLang('zh')">🇨🇳 中文</button>
+    </div>
+    <h1 id="title">🍸 Piccolo Bar - Rovigo</h1>
+    <p id="subtitle">Via Angeli 24, Rovigo - Tel. 3248138432</p>
+    <p id="hours">Orario: 7:00 - 1:00</p>
+  </header>
+
+  <nav>
+    <a href="#menu" id="nav-menu">Menu</a>
+    <a href="#cocktails" id="nav-cocktails">Cocktail</a>
+    <a href="#eventi" id="nav-events">Eventi</a>
+    <a href="#contatti" id="nav-contact">Contatti</a>
+  </nav>
+
+  <section id="menu">
+    <h2 id="menu-title">🍔 Menu</h2>
+    <ul>
+      <li>🌭 Hot dog americani</li>
+      <li>🍔 Hamburger</li>
+      <li>🥪 Piadina</li>
+      <li>🍟 Patatine fritte</li>
+      <li>🥪 Sandwich americani</li>
+    </ul>
+  </section>
+
+  <section id="cocktails">
+    <h2 id="cocktails-title">🍹 Cocktail</h2>
+    <p id="cocktails-text">Offriamo una selezione di cocktail internazionali e specialità della casa.</p>
+  </section>
+
+  <section id="eventi">
+    <h2 id="events-title">🎉 Eventi Speciali</h2>
+    <p id="events-text">Organizziamo feste di laurea, compleanni ed eventi privati.</p>
+    <img src="menu-festa.jpg" alt="Menù Festa di Laurea - Piccolo Bar">
+  </section>
+
+  <section id="contatti">
+    <h2 id="contact-title">📍 Contatti</h2>
+    <p id="address"><b>Indirizzo:</b> Via Angeli 24, Rovigo</p>
+    <p id="phone"><b>Telefono:</b> 3248138432</p>
+    <p id="schedule"><b>Orario:</b> Tutti i giorni 7:00 - 1:00</p>
+    <p><a id="map-link" href="https://www.google.com/maps/search/?api=1&query=Via+Angeli+24+Rovigo" target="_blank">🗺️ Vedi su Google Maps</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Piccolo Bar - Rovigo</p>
+  </footer>
+
+  <script>
+    const translations = {
+      it: {
+        hours: "Orario: 7:00 - 1:00",
+        nav: ["Menu","Cocktail","Eventi","Contatti"],
+        menu: "🍔 Menu",
+        cocktails: "🍹 Cocktail",
+        cocktailsText: "Offriamo una selezione di cocktail internazionali e specialità della casa.",
+        events: "🎉 Eventi Speciali",
+        eventsText: "Organizziamo feste di laurea, compleanni ed eventi privati.",
+        contact: "📍 Contatti",
+        address: "<b>Indirizzo:</b> Via Angeli 24, Rovigo",
+        phone: "<b>Telefono:</b> 3248138432",
+        schedule: "<b>Orario:</b> Tutti i giorni 7:00 - 1:00",
+        map: "🗺️ Vedi su Google Maps"
+      },
+      en: {
+        hours: "Opening Hours: 7:00 AM - 1:00 AM",
+        nav: ["Menu","Cocktails","Events","Contact"],
+        menu: "🍔 Menu",
+        cocktails: "🍹 Cocktails",
+        cocktailsText: "We offer a selection of international cocktails and house specials.",
+        events: "🎉 Special Events",
+        eventsText: "We organize graduation parties, birthdays, and private events.",
+        contact: "📍 Contact",
+        address: "<b>Address:</b> Via Angeli 24, Rovigo",
+        phone: "<b>Phone:</b> +39 3248138432",
+        schedule: "<b>Opening:</b> Every day 7:00 - 1:00",
+        map: "🗺️ View on Google Maps"
+      },
+      zh: {
+        hours: "营业时间：07:00 – 01:00",
+        nav: ["菜单","鸡尾酒","活动","联系我们"],
+        menu: "🍔 菜单",
+        cocktails: "🍹 鸡尾酒",
+        cocktailsText: "我们提供各类国际鸡尾酒和特色特调。",
+        events: "🎉 特别活动",
+        eventsText: "我们承办毕业派对、生日聚会和私人活动。",
+        contact: "📍 联系方式",
+        address: "<b>地址：</b> Via Angeli 24, Rovigo",
+        phone: "<b>电话：</b> 3248138432",
+        schedule: "<b>营业：</b> 每天 7:00 - 1:00",
+        map: "🗺️ 在 Google 地图查看"
+      }
+    };
+
+    function setLang(lang) {
+      document.getElementById("hours").innerHTML = translations[lang].hours;
+      const navLinks = document.querySelectorAll("nav a");
+      translations[lang].nav.forEach((txt, i) => navLinks[i].innerText = txt);
+      document.getElementById("menu-title").innerText = translations[lang].menu;
+      document.getElementById("cocktails-title").innerText = translations[lang].cocktails;
+      document.getElementById("cocktails-text").innerText = translations[lang].cocktailsText;
+      document.getElementById("events-title").innerText = translations[lang].events;
+      document.getElementById("events-text").innerText = translations[lang].eventsText;
+      document.getElementById("contact-title").innerText = translations[lang].contact;
+      document.getElementById("address").innerHTML = translations[lang].address;
+      document.getElementById("phone").innerHTML = translations[lang].phone;
+      document.getElementById("schedule").innerHTML = translations[lang].schedule;
+      document.getElementById("map-link").innerText = translations[lang].map;
+    }
+  </script>
+</body>
+</html>
